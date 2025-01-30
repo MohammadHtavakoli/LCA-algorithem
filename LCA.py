@@ -89,7 +89,7 @@ def main():
         result = lca(u, v, up, depth)
         end_time = time.time()
         print(f"LCA of {u} and {v} is {result}. Query time: {(end_time - start_time) * 1000:.3f} ms")
-        visualize_tree(edges, result, (u, v), output_file=f"tree_{u}_{v}.png")
+        visualize_tree(edges, result, (u, v), output_file=f"tree_{u}_{v}")
 
 if __name__ == "__main__":
     main()
